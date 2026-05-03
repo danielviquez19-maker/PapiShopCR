@@ -1,0 +1,19 @@
+customHeaders:
+  - pattern: '**/*'
+    headers:
+      - key: 'Content-Security-Policy'
+        value: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
+      - key: 'X-Content-Type-Options'
+        value: 'nosniff'
+  - pattern: '**/*.css'
+    headers:
+      - key: 'Cache-Control'
+        value: 'no-cache, no-store, must-revalidate'
+  - pattern: '**/*.js'
+    headers:
+      - key: 'Cache-Control'
+        value: 'no-cache, no-store, must-revalidate'
+  - pattern: '**/*.html'
+    headers:
+      - key: 'Cache-Control'
+        value: 'no-cache, no-store, must-revalidate'

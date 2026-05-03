@@ -31,3 +31,17 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}button,inp
 @media (max-width:430px){.brand{width:150px;min-width:132px}.brand img{height:52px}.hero-copy h1,.page-hero h1{font-size:42px}.hero-proof article{padding:14px}.hero-proof strong{font-size:28px}.dog-card{width:82vw}.cat-card{width:170px}.reel-thumb{height:240px}.reel-thumb strong{font-size:28px}.filters button{font-size:13px;padding:9px 11px}}
 
 @media (max-width:430px){.hero-side-card.category-main-card{max-width:390px}.hero-side-card.category-main-card img{width:100%;height:100%;max-height:390px}}
+
+
+/* v11 - ajuste tipográfico y soporte de GIF en Amplify */
+html{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+.hero-side-card.category-main-card picture,
+.hero-side-card.category-main-card .animated-preview-dog{
+  display:block;
+  width:100%;
+  height:100%;
+}

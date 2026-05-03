@@ -32,4 +32,5 @@ Versión ajustada con:
 - Se limitó el ancho visual de los category cards y se agregó cache busting a CSS/JS (`?v=7`).
 
 
-- v10: integración del GIF original real (150 frames) en el hero de perros para prueba visual.
+- v11: ajuste de tipografías para Amplify. Se reforzó la carga de Google Fonts en todos los HTML, se actualizó cache busting a `?v=11` y se agregó `customHttp.yml` con permisos CSP para `fonts.googleapis.com` y `fonts.gstatic.com`.
+- v11: se conserva la integración del GIF original real en el hero de perros si el archivo fue recibido dentro de `download.gif.zip`.
