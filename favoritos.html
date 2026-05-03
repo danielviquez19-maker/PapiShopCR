@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es-CR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Favoritos de Papi | Papishopcr.com</title>
+  <meta name="description" content="Curaduría de productos recomendados, novedades y top vendidos para perros y gatos.">
+  <meta name="theme-color" content="#F4A300">
+  <link rel="icon" href="assets/brand/icons/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/brand/icons/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/brand/icons/app-icon-192x192.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=10">
+</head>
+<body data-page="favoritos">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="topbar">
+    <span>💛 Compra fácil</span>
+    <strong>Entrega en 48 horas dentro del GAM</strong>
+    <span>papishopcr.com</span>
+  </div>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Papishopcr.com inicio">
+        <img src="assets/brand/logos/papishopcr_header_logo.png" alt="papishopcr.com">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" data-nav aria-label="Navegación principal">
+        <a href="index.html" data-nav-page="home">Inicio</a>
+        <a href="perros.html" data-nav-page="perros">Perros</a>
+        <a href="gatos.html" data-nav-page="gatos">Gatos</a>
+        <a href="visto-en-tiktok.html" data-nav-page="tiktok">Visto en TikTok</a>
+        <a href="favoritos.html" data-nav-page="favoritos">Favoritos</a>
+      </nav>
+      <a class="cart-button" href="carrito.html" aria-label="Ir al carrito">
+        <span>Carrito</span><strong data-cart-count>0</strong>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero page-hero favoritos-hero section-pattern">
+      <div class="container narrow">
+        <span class="eyebrow"><i></i> Favoritos de Papi</span>
+        <h1>Curaduría para chinearlos mejor.</h1>
+        <p>Novedades, premium picks, top vendidos y productos que tu mascota va a amar.</p>
+      </div>
+    </section>
+    <section class="page-section" id="productos">
+      <div class="container">
+        <div class="catalog-head">
+          <div class="section-heading compact"><span class="eyebrow"><i></i> Catálogo destacado</span><h2>Comprá por categoría.</h2></div>
+          <div class="filters" role="tablist" aria-label="Filtros favoritos">
+            <button class="active" data-filter="Todos" type="button">Todos</button>
+            <button data-filter="Perros" type="button">Perros</button>
+            <button data-filter="Gatos" type="button">Gatos</button>
+            <button data-filter="Juguetes" type="button">Juguetes</button>
+            <button data-filter="Ropa" type="button">Ropa</button>
+            <button data-filter="Accesorios" type="button">Accesorios</button>
+            <button data-filter="Camas" type="button">Camas</button>
+          </div>
+        </div>
+        <div class="product-grid" data-product-grid data-scope="favoritos"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="footer-logo-card"><img class="footer-logo" src="assets/brand/logos/papishopcr_header_logo.png" alt="papishopcr.com"></span>
+        <p>Productos especiales para perros y gatos amados como familia. Compra simple, apoyo por WhatsApp y entrega en 48 horas dentro del GAM.</p>
+      </div>
+      <div>
+        <h3>Comprar</h3>
+        <a href="perros.html">Perros</a>
+        <a href="gatos.html">Gatos</a>
+        <a href="favoritos.html">Favoritos de Papi</a>
+        <a href="visto-en-tiktok.html">Visto en TikTok</a>
+      </div>
+      <div>
+        <h3>Ayuda</h3>
+        <a href="carrito.html">Carrito / Checkout</a>
+        <a href="https://wa.me/50600000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:hola@papishopcr.com">hola@papishopcr.com</a>
+        <span>Entrega 48h GAM</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 papishopcr.com</span>
+      <span>Sin alimentos, higiene ni productos de salud.</span>
+    </div>
+  </footer>
+  <div class="toast" data-toast aria-live="polite"></div>
+  <script src="script.js?v=10"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es-CR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrito / Checkout | Papishopcr.com</title>
+  <meta name="description" content="Resumen de compra, subtotal y checkout asistido por WhatsApp para Papishopcr.com.">
+  <meta name="theme-color" content="#F4A300">
+  <link rel="icon" href="assets/brand/icons/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/brand/icons/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/brand/icons/app-icon-192x192.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=10">
+</head>
+<body data-page="carrito">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="topbar">
+    <span>💛 Compra fácil</span>
+    <strong>Entrega en 48 horas dentro del GAM</strong>
+    <span>papishopcr.com</span>
+  </div>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Papishopcr.com inicio">
+        <img src="assets/brand/logos/papishopcr_header_logo.png" alt="papishopcr.com">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" data-nav aria-label="Navegación principal">
+        <a href="index.html" data-nav-page="home">Inicio</a>
+        <a href="perros.html" data-nav-page="perros">Perros</a>
+        <a href="gatos.html" data-nav-page="gatos">Gatos</a>
+        <a href="visto-en-tiktok.html" data-nav-page="tiktok">Visto en TikTok</a>
+        <a href="favoritos.html" data-nav-page="favoritos">Favoritos</a>
+      </nav>
+      <a class="cart-button" href="carrito.html" aria-label="Ir al carrito">
+        <span>Carrito</span><strong data-cart-count>0</strong>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero page-hero cart-hero">
+      <div class="container narrow">
+        <span class="eyebrow"><i></i> Carrito / Checkout</span>
+        <h1>Finalizá tu pedido.</h1>
+        <p>Revisá cantidades, subtotal y continuá por WhatsApp para confirmar entrega dentro del GAM.</p>
+      </div>
+    </section>
+    <section class="page-section">
+      <div class="container cart-layout">
+        <div class="cart-page-card">
+          <div class="cart-page-header">
+            <h2>Tu carrito</h2>
+            <a class="text-link" href="favoritos.html">Seguir comprando</a>
+          </div>
+          <div class="cart-items" data-cart-items></div>
+        </div>
+        <aside class="checkout-card">
+          <span class="badge">Entrega 48h GAM</span>
+          <h2>Resumen</h2>
+          <div class="summary-row"><span>Subtotal</span><strong data-cart-subtotal>₡0</strong></div>
+          <p>El costo final de envío y disponibilidad se confirma por WhatsApp según zona del GAM.</p>
+          <a class="btn btn-primary full" href="https://wa.me/50600000000" target="_blank" rel="noopener" data-whatsapp-checkout>Finalizar por WhatsApp</a>
+          <button class="btn btn-secondary full" type="button" data-clear-cart>Vaciar carrito</button>
+          <div class="help-box"><strong>¿Necesitás ayuda?</strong><span>Consultá talla, medidas, disponibilidad o recomendación de producto.</span></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="footer-logo-card"><img class="footer-logo" src="assets/brand/logos/papishopcr_header_logo.png" alt="papishopcr.com"></span>
+        <p>Productos especiales para perros y gatos amados como familia. Compra simple, apoyo por WhatsApp y entrega en 48 horas dentro del GAM.</p>
+      </div>
+      <div>
+        <h3>Comprar</h3>
+        <a href="perros.html">Perros</a>
+        <a href="gatos.html">Gatos</a>
+        <a href="favoritos.html">Favoritos de Papi</a>
+        <a href="visto-en-tiktok.html">Visto en TikTok</a>
+      </div>
+      <div>
+        <h3>Ayuda</h3>
+        <a href="carrito.html">Carrito / Checkout</a>
+        <a href="https://wa.me/50600000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:hola@papishopcr.com">hola@papishopcr.com</a>
+        <span>Entrega 48h GAM</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 papishopcr.com</span>
+      <span>Sin alimentos, higiene ni productos de salud.</span>
+    </div>
+  </footer>
+  <div class="toast" data-toast aria-live="polite"></div>
+  <script src="script.js?v=10"></script>
+</body>
+</html>
